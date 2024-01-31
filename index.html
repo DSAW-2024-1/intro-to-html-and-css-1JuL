@@ -10,68 +10,210 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @font-face {
+      font-family: 'young-serif';
+      src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'outfit';
+      src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    }
+
+    body {
+      font-family: 'outfit', sans-serif;
+      font-weight: 400;
+      background-color: hsl(30, 54%, 90%);
+      max-width: 100%;
+      max-height: 100%;
+      margin: 0;
+      padding-top: 80px;
+      display: grid;
+      place-items: center;
+    }
+    
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {margin-top: 20px;}
+
+    .hoja{
+      background-color: hsl(0, 0%, 100%);
+      width: 660px;
+      border-radius: 20px;
+      padding: 40px;
+    }
+    hr{
+      border: 1px solid hsl(30, 18%, 87%);
+    }
+    .image{
+      width: 660px;
+      border-radius: 15px;
+    }
+    .prepTime{
+      padding: 0;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 5px;
+      padding-bottom: 15px;
+      background-color: hsl(330, 100%, 98%);
+      border-radius: 10px;
+    }
+    
+    h1{
+      font-family: 'young-serif', sans-serif;
+      font-weight: 400;
+    }
+    h3{color: hsl(332, 51%, 32%);}
+    h2{
+      color: hsl(14, 45%, 36%);
+      font-weight: 500;
+      font-family: 'young-serif', sans-serif;
+    }
+    .listaIng li::marker{
+      color: hsl(14, 45%, 36%);
+      font-weight: bold;
+      content: '\2022';
+    }
+    .listaprep li::marker{
+      color: hsl(332, 51%, 32%);;
+      font-weight: bold;
+      content: '\2022';
+    }
+    .listaIns li::marker{
+      color: hsl(14, 45%, 36%);
+      font-weight: bold;
+    }
+    li{
+      padding-left: 30px;
+    }
+    div span{
+      font-weight: bold;
+    }
+    p{
+      font-size: 16px;
+    }
+    .column1{
+      text-align: left;
+      padding-left: 30px;
+    }
+    .column2{
+      color: hsl(14, 45%, 36%);
+    }
+    ul{
+      line-height: 1.1;
+      padding-left: 8px;
+    }
+    ol{
+      line-height: 1.2;
+      padding-left: 20px;
+    }
+    table{
+      border-collapse: collapse;
+      width: 100%;
+    }
+    tr{
+      border-bottom: 1px solid hsl(30, 18%, 87%);
+    }
+    td{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    #lastrow{
+      border-bottom: none;
+    }
   </style>
+
 </head>
 <body>
+  <div class="hoja">
+      <img src="./assets/images/image-omelette.jpeg" alt="Omelette image" class="image">
+      <div>
+        <h1>Simple Omelette Recipe</h1>
 
-  Simple Omelette Recipe
+        <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs <br>cooked
+          to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+        </p><br>
 
-  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+      </div>
 
-  Preparation time
+      <div class="prepTime">
+        <h3>Preparation time</h3>
+        <ul class="listaprep">
+          <li><span>Total:</span> Approximately 10 minutes</li><br>
+          <li><span>Preparation:</span> 5 minutes</li><br>
+          <li><span>Cooking</span> 5 minutes</li>
+        </ul>
+      </div>
 
-  Total: Approximately 10 minutes
-  Preparation: 5 minutes
-  Cooking: 5 minutes
+        <h2>Ingredients</h2>
+        <ul class="listaIng">
+          <li>2-3 large eggs</li><br>
+          <li>Salt, to taste</li><br>
+          <li>Pepper, to taste</li><br>
+          <li>1 tablespoon of butter or oil</li><br>
+          <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
 
-  Ingredients
+        <br><hr>
 
-  2-3 large eggs
-  Salt, to taste
-  Pepper, to taste
-  1 tablespoon of butter or oil
-  Optional fillings: cheese, diced vegetables, cooked meats, herbs
+        <h2>Instructions</h2>
+        <ol class="listaIns">
+          <li><span>Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are <br> well mixed. 
+          You can add a tablespoon of water or milk for a fluffier texture.
+          </li><br>
 
-  Instructions
+          <li><span>Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li><br>
 
-  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.
+          <li><span>Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the <br> pan to ensure
+          the eggs evenly coat the surface.
+          </li><br>
 
-  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
+          <li>
+            <span>Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly <br> runny in the 
+            middle, sprinkle your chosen fillings over one half of the omelette.
+          </li><br>
 
-  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.
+          <li>
+            <span>Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it <br> over the 
+            fillings. Let it cook for another minute, then slide it onto a plate.
+          </li><br>
 
-  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.
+          <li><span>Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
+        </ol>
 
-  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.
+        <br><hr>
 
-  Enjoy: Serve hot, with additional salt and pepper if needed.
+        <h2>Nutrition</h2>
+        <p>The table below shows nutritional values per serving without the additional fillings.</p>
 
-  Nutrition
+        <table>
+          <tr>
+            <td class="column1">Calories</td>
+            <td class="column2"><span>277kcal</span></td>
+          </tr>
 
-  The table below shows nutritional values per serving without the additional fillings.
+          <tr>
+            <td class="column1">Carbs</td>
+            <td class="column2"><span>0g</span></td>
+          </tr>
+          
+          <tr>
+            <td class="column1">Protein</td>
+            <td class="column2"><span>20g</span></td>
+          </tr>
+          
+          <tr id="lastrow">
+            <td class="column1">Fat</td>
+            <td class="column2"><span>22g</span></td>
+          </tr>
+        </table>
+  </div>
 
-  Calories
-  277kcal
-
-  Carbs
-  0g
-
-  Protein
-  20g
-
-  Fat
-  22g
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Diego Diaz</a>.
   </div>
+
+</div>
+
 </body>
 </html>
